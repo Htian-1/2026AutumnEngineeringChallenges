@@ -73,7 +73,7 @@
 
 ## Level3：完成YOLO模型训练
 ### 3.1 数据集配置文件 data.yaml
-yaml
+```yaml
 path: ../dataset
 train: images/train
 val: images/val
@@ -81,6 +81,7 @@ names:
   0: obstacle
   1: cola
   2: football
+```
 
 ### 3.2 训练参数
 - 模型：YOLOv8s
