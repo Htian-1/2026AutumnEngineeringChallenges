@@ -16,16 +16,16 @@
 - CUDA状态：可用
 
 **验证截图1：Python版本验证终端截图**
-![[level1_python_version.png.png]]
+![Python版本验证](results/extra/level1_python_version.png)
 
 **验证截图2：PyTorch+GPU可用性验证终端截图**
-![[level1_pytorch_gpu.png.png]]
+![PyTorch与GPU验证](results/extra/level1_pytorch_gpu.png)
 
 **验证截图3：yolo安装验证终端截图**
-![[level1_yolo_checks.png.png]]
+![YOLO安装验证](results/extra/level1_yolo_checks.png)
 
 **验证截图4：yolo安装验证终端截图
-![[level1_yolo_checks.png (2).png]]
+![YOLO安装验证2](results/level1_yolo_checks.png%20%282%29.png)
 
 
 
@@ -44,7 +44,7 @@
 > 划分策略：对三类目标图片分别按比例随机划分，保证训练、验证集中都包含全部类别，避免类别分布不均衡。
 
 **目录结构截图2：项目文件夹树截图**
-![[folder_tree.png.png]]
+![项目文件夹树](results/extra/folder_tree.png)
 
 ## Level2：完成目标检测标注
 ### 2.1 标注工具
@@ -63,13 +63,13 @@
 > YOLO标签格式说明：`class x_center y_center width height`，坐标全部经过归一化，取值范围0~1。
 
 **截图3：LabelImg标注工具运行截图**
-![[level2_labeltool.png.png]]
+![LabelImg标注工具运行截图](results/level2_labeltool.png.png)
 
 **截图4：标注完成图片可视化截图**
-![[level2_labeltool.png]]
+![标注完成可视化](results/level2_labeltool.png.png)
 
 **截图5：对应txt标签文件内容截图**
-![[level2_txt.png.png]]
+![txt标签文件内容](results/level2_txt.png.png)
 
 ## Level3：完成YOLO模型训练
 ### 3.1 数据集配置文件 data.yaml
@@ -92,13 +92,13 @@ names:
 训练启动成功，终端输出训练日志。训练完成后，在 `runs/train/weights/` 生成模型权重`best.pt`、`last.pt`。
 
 **截图 6：模型开始训练的终端日志截图**
-![[screenshot6_train_log.png.png]]
-![[screenshot6_train_log.png (2).png]]
+![训练终端日志](results/screenshot6_train_log.png.png)
+![训练终端日志2](results/screenshot6_train_log.png%20%282%29.png)
 **截图 7：训练结果目录截图**
-![[screenshot7_train_dir.png.png]]
+![训练结果目录](results/screenshot7_train_dir.png.png)
 
 **截图 8：训练指标图（Loss、Precision、Recall）**
-![[screenshot8_results_curve.png.png]]
+![训练指标曲线](results/screenshot8_results_curve.png.png)
 
 指标简要说明：
 - Loss：损失函数，数值越低代表模型预测误差越小
@@ -114,7 +114,7 @@ names:
 3. 不同角度场景检测
 
 **截图 9：新图片推理检测效果图（至少一张）**
-![[screenshot9_detect.png.png]]
+![新图片推理检测效果](results/screenshot9_detect.png.png)
 
 结果说明：图中成功画出目标框，显示类别名称与置信度，模型可以正确识别 obstacle、cola、football 三类物体。
 
